@@ -2,6 +2,8 @@
 
 This repository contains PyTorch implementations and experiments for several operator learning models.
 
+The goal of these experiments is to compare the accuracy, computational cost, and cross-resolution generalization behavior of different operator learning architectures.
+
 We compare several neural-operator architectures on two benchmark problems:
 
 1. A one-dimensional kernel integral operator
@@ -28,9 +30,9 @@ The notebooks can be opened directly in Colab.
 
 | Model | Notebook |
 |---|---|
-| Transformer | [Open in Colab](你的 Transformer Colab 連結) |
-| DeepONet | [Open in Colab](你的 Poisson DeepONet Colab 連結) |
-| FNO-2D | [Open in Colab](你的 Poisson FNO Colab 連結) |
+| Transformer | [Open in Colab](https://colab.research.google.com/drive/1BWm1VcgOVzsI81RtT9C_6cxD2rJ77BDK?usp=sharing) |
+| DeepONet | [Open in Colab](https://colab.research.google.com/drive/1Jsmms1wfyD4ngp8ZQE3Z2h942Tb3J_3z?usp=sharing) |
+| FNO-2D | [Open in Colab](https://colab.research.google.com/drive/1wIqkNh9qDO9Oi4O_5MVPmfvWeedj_fTR?usp=sharing) |
 
 ```markdown
 ## Data
@@ -41,12 +43,14 @@ For the one-dimensional kernel operator, the dataset is saved as:
 
 ```text
 integral_gaussian_L64_N3000_seed20250930.pt
-
+'''
 For the two-dimensional Poisson problem, the dataset is saved as:
 ```text
 circular_poisson_dataset.npz
 circular_poisson_dataset_params.pkl
+'''
+The dataset files are prepared in advance so that all models are trained and tested on the same data. This makes the comparison between different models more consistent.
 
-## Reproducibility
+For the one-dimensional kernel operator, the dataset file contains the fixed samples and the fixed train/validation/test splits.
 
-Random seeds and train/validation/test splits are fixed in the experiments whenever possible.
+For the two-dimensional Poisson problem, the dataset is generated numerically and saved before training, so the same saved data can be reused for different models.
