@@ -34,7 +34,7 @@ The notebooks can be opened directly in Colab.
 | DeepONet | [Open in Colab](https://colab.research.google.com/drive/1Jsmms1wfyD4ngp8ZQE3Z2h942Tb3J_3z?usp=sharing) |
 | FNO-2D | [Open in Colab](https://colab.research.google.com/drive/1wIqkNh9qDO9Oi4O_5MVPmfvWeedj_fTR?usp=sharing) |
 
-```markdown
+
 ## Data
 
 The experiments use pre-generated dataset files that are loaded directly in the notebooks.
@@ -43,12 +43,12 @@ For the one-dimensional kernel operator, the dataset is saved as:
 
 ```text
 integral_gaussian_L64_N3000_seed20250930.pt
-'''
+```
 For the two-dimensional Poisson problem, the dataset is saved as:
 ```text
 circular_poisson_dataset.npz
 circular_poisson_dataset_params.pkl
-'''
+```
 The dataset files are prepared in advance so that all models are trained and tested on the same data. This makes the comparison between different models more consistent.
 
 For the one-dimensional kernel operator, the dataset file contains the fixed samples and the fixed train/validation/test splits.
