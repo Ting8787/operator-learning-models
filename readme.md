@@ -22,7 +22,7 @@ The notebooks can be opened directly in Colab.
 | Model | Notebook |
 |---|---|
 | DNN | [Open in Colab](https://colab.research.google.com/drive/1G9vUJZQEJa00vf0GTqfjXTgq5gQtjx0A?usp=sharing) |
-| Softmax Attention and Linear Attention | [Open in Colab](https://colab.research.google.com/drive/1U5tPypzrGBEoZCMXR6NeSVWQ-IKeIwHD?usp=sharing) |
+| Softmax Attention and Linear Attention | [Open in Colab](https://colab.research.google.com/drive/1ZBZY1YHC1sMTuOdxiNbN-LuLbLL-lvFD?usp=sharing) |
 | DeepONet | [Open in Colab](https://colab.research.google.com/drive/1RqWtK4qk11lr06k4HPeuDCsaxbDstD-a?usp=sharing) |
 | FNO-1D | [Open in Colab](https://colab.research.google.com/drive/1OiZHsZmNt2qxOT74qO4HPOY2fnaJ4WLC?usp=sharing) |
 
